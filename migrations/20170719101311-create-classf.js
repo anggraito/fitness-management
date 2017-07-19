@@ -1,14 +1,14 @@
 'use strict';
 module.exports = {
   up: function(queryInterface, Sequelize) {
-    return queryInterface.createTable('classes', {
+    return queryInterface.createTable('classfs', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      classnameId: {
+      ClassnameId: {
         type: Sequelize.INTEGER
       },
       date: {
@@ -31,6 +31,6 @@ module.exports = {
     });
   },
   down: function(queryInterface, Sequelize) {
-    return queryInterface.dropTable('classes');
+    return queryInterface.dropTable('classfs');
   }
 };

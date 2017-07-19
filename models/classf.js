@@ -1,10 +1,10 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var class = sequelize.define('class', {
-    classnameId: DataTypes.INTEGER,
+  var classf = sequelize.define('classf', {
+    ClassnameId: DataTypes.INTEGER,
     date: DataTypes.DATE,
     starttime: DataTypes.TIME,
     endtime: DataTypes.TIME
   });
-  return class;
+  return classf;
 };
