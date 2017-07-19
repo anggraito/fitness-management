@@ -11,7 +11,7 @@ app.get('/', function(req, res){
   res.send('hallo anggie and renata');
 })
 
-
+var Member = require('./models/member');
 
 var member = require('./routers/member');
 

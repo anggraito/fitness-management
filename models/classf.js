@@ -6,5 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     starttime: DataTypes.TIME,
     endtime: DataTypes.TIME
   });
+  // classf.associate = (models) => {
+  //   classf.belongsToMany(models.member)
+  // }
   return classf;
 };

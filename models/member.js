@@ -7,5 +7,8 @@ module.exports = function(sequelize, DataTypes) {
     telp: DataTypes.STRING,
     plan: DataTypes.INTEGER
   });
+  // member.associate = (models) => {
+  //   member.belongsToMany(models.classf)
+  // }
   return member;
 };

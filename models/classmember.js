@@ -4,5 +4,9 @@ module.exports = function(sequelize, DataTypes) {
     classId: DataTypes.INTEGER,
     memberId: DataTypes.INTEGER
   });
+  classmember.associate = (models) => {
+    classmember.belongsTo(models.classf);
+    classmember.belongsTo(models.member);
+  }
   return classmember;
 };
